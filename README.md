@@ -1,3 +1,8 @@
+To create a 1.4.0 version which runs on Mac OSX Yosemite 10.10
+* Install golang 1.12.12
+* `make --debug=VERBOSE bin-darwin`
+* Internal nebula SSH server sshd not supported. Stubbed out
+
 ## What is Nebula?
 Nebula is a scalable overlay networking tool with a focus on performance, simplicity and security.
 It lets you seamlessly connect computers anywhere in the world. Nebula is portable, and runs on Linux, OSX, Windows, iOS, and Android.

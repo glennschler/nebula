@@ -76,7 +76,7 @@ func Main(config *Config, configTest bool, buildVersion string, logger *logrus.L
 	ssh, err := sshd.NewSSHServer(l.WithField("subsystem", "sshd"))
 	wireSSHReload(l, ssh, config)
 	var sshStart func()
-	if config.GetBool("sshd.enabled", false) {
+	if false && config.GetBool("sshd.enabled", false) {
 		sshStart, err = configSSH(l, ssh, config)
 		if err != nil {
 			return nil, NewContextualError("Error while configuring the sshd", nil, err)
